@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Perfil personal de GitHub. Información sobre mis intereses y proyectos."/>
+  <title>Mi Página Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4em 2em;
+      background-color: rgba(255,255,255,0.9);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2em;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1em;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #d9e2ec;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      margin: 0.5em 0;
+      color: #222;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+
+    section p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Estilos para la sección de intereses */
+    .intereses-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 2em;
+      justify-content: center;
+    }
+
+    .interes {
+      background: #fff;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      transition: transform 0.2s ease;
+    }
+
+    .interes:hover {
+      transform: translateY(-5px);
+    }
+
+    .interes h3 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+
+    .interes p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .interes .icon {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    /* Estilos para proyectos */
+    .proyectos a {
+      display: inline-block;
+      background: #3178c6;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1em;
+      transition: background 0.2s ease;
+    }
+
+    .proyectos a:hover {
+      background: #225a8c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #777;
+      font-size: 0.9em;
+      background-color: rgba(255,255,255,0.8);
+      border-top: 1px solid #ccc;
+      margin-top: 3em;
+    }
+
+    a {
+      color: #3178c6;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #225a8c;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      .interes {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Puedes reemplazar la imagen con una tuya -->
+    <img src="https://via.placeholder.com/120" alt="Foto de perfil">
+    <h1>Hola, soy [Tu Nombre]</h1>
+    <p>Desarrollador y entusiasta de la tecnología, con interés en crear soluciones innovadoras y de alto impacto.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un desarrollador apasionado por la tecnología, la programación y la resolución de problemas. 
+        Me encanta aprender sobre nuevos lenguajes, frameworks y herramientas, 
+        trabajar en proyectos que generen un impacto real y colaborar con otras personas 
+        para construir soluciones creativas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mis intereses</h2>
+      <div class="intereses-container">
+        <div class="interes">
+          <div class="icon">💻</div>
+          <h3>Desarrollo Web</h3>
+          <p>
+            Aplicaciones modernas, escalables y enfocadas en la experiencia de usuario.
+          </p>
+        </div>
+        <div class="interes">
+          <div class="icon">📊</div>
+          <h3>Data Science</h3>
+          <p>
+            Análisis de datos, machine learning y decisiones informadas.
+          </p>
+        </div>
+        <div class="interes">
+          <div class="icon">🤝</div>
+          <h3>Software Libre</h3>
+          <p>
+            Contribuir a la comunidad, compartir conocimiento y mejorar juntos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos">
+      <h2>Proyectos</h2>
+      <p>
+        Si quieres ver algunos de mis trabajos, repositorios y ejemplos de código, 
+        visita mi perfil en GitHub:
+      </p>
+      <a href="https://github.com/tu-usuario" target="_blank">Ver mis proyectos</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2024 [Tu Nombre]. Construido con GitHub Pages.
+  </footer>
+</body>
+</html>
