@@ -69,7 +69,7 @@
       color: #444;
     }
 
-    .intereses-container {
+    .container-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 2em;
@@ -77,7 +77,7 @@
       justify-content: center;
     }
 
-    .interes {
+    .card {
       background: #fff;
       padding: 2em;
       border-radius: 8px;
@@ -89,22 +89,22 @@
       transition: transform 0.2s ease;
     }
 
-    .interes:hover {
+    .card:hover {
       transform: translateY(-5px);
     }
 
-    .interes h3 {
+    .card h3 {
       font-size: 1.4em;
       margin-bottom: 0.5em;
       color: #222;
     }
 
-    .interes p {
+    .card p {
       font-size: 0.95em;
       color: #555;
     }
 
-    .interes .icon {
+    .icon {
       font-size: 2.5em;
       margin-bottom: 0.5em;
     }
@@ -150,7 +150,7 @@
       header h1 {
         font-size: 1.8em;
       }
-      .interes {
+      .card {
         min-width: 100%;
       }
     }
@@ -162,7 +162,7 @@
     <img src="https://via.placeholder.com/120" alt="Profile picture">
     <h1>Raúl Manuel Maglione</h1>
     <p>
-      Final-year Computer Science student, Database Administrator, and aspiring Data Scientist.
+      Computer Science student, dedicated data professional, and passionate educator.
     </p>
   </header>
 
@@ -170,49 +170,90 @@
     <section>
       <h2>About Me</h2>
       <p>
-        I am in my final year of a Computer Science degree at the Universidad de la República (Udelar), currently working on my undergraduate thesis. After graduation, I plan to pursue a Master’s degree in Data Science and Machine Learning, fields that I am deeply passionate about and in which I aim to develop my professional career.
+        As I approach the completion of my undergraduate degree in Computer Science, I find myself drawn more than ever to the world of data-driven insights and intelligent systems. Building on my background in database administration, I am eager to expand my skill set into areas like machine learning and advanced analytics, leveraging these tools to drive innovation and informed decision-making.
       </p>
       <p>
-        I have experience as a Database Administrator, working with PostgreSQL, Oracle, and SQL Server. This role has sharpened my skills in database management, query optimization, and data analysis. In the near future, I hope to apply my skills to projects involving artificial intelligence and machine learning.
+        My experience managing relational databases—ranging from PostgreSQL to Oracle and SQL Server—has taught me the importance of maintaining data integrity, streamlining query efficiency, and understanding the nuances of large-scale systems. Beyond the technical aspects, working closely with data has reinforced my belief that the right information, presented at the right time, can transform how organizations operate.
       </p>
       <p>
-        Additionally, I have over two years of experience as a lecturer at the Faculty of Engineering at Udelar, teaching programming and mathematics courses. This teaching experience has helped me communicate complex concepts clearly and strengthened my public speaking skills.
+        In addition to my technical pursuits, I have spent over two years teaching courses in programming and mathematics at the university level. Sharing knowledge, clarifying complex ideas, and guiding students toward a deeper understanding have all strengthened my communication abilities. This blend of technical proficiency, educational experience, and a keen interest in cutting-edge data technologies shapes my aspiration to contribute meaningfully to projects at the intersection of data science and real-world impact.
       </p>
     </section>
 
     <section>
       <h2>My Interests</h2>
-      <div class="intereses-container">
-        <div class="interes">
+      <div class="container-grid">
+        <div class="card">
           <div class="icon">🗄️</div>
-          <h3>Database Administration</h3>
+          <h3>Data Management</h3>
           <p>
-            Skilled in managing and optimizing relational databases (PostgreSQL, Oracle, SQL Server) and improving query performance.
+            Ensuring reliable, optimized, and accessible data environments through thoughtful administration and performance tuning.
           </p>
         </div>
-        <div class="interes">
-          <div class="icon">📊</div>
-          <h3>Data Science & Machine Learning</h3>
+        <div class="card">
+          <div class="icon">🤖</div>
+          <h3>Machine Learning & AI</h3>
           <p>
-            Passionate about data-driven solutions, predictive modeling, and implementing AI-powered workflows.
+            Harnessing predictive models and intelligent algorithms to drive data-informed decisions and innovative solutions.
           </p>
         </div>
-        <div class="interes">
-          <div class="icon">👨‍🏫</div>
-          <h3>Teaching & Mentorship</h3>
+        <div class="card">
+          <div class="icon">🎓</div>
+          <h3>Teaching & Communication</h3>
           <p>
-            Experience as a lecturer in programming and mathematics. Enthusiastic about guiding others to understand and excel in complex topics.
+            Breaking down complex concepts into understandable terms and fostering curiosity and creativity in learners.
           </p>
         </div>
       </div>
     </section>
 
+    <section>
+      <h2>Skills & Tools</h2>
+      <div class="container-grid">
+        <div class="card">
+          <div class="icon">🐘</div>
+          <h3>PostgreSQL</h3>
+          <p>
+            Experience optimizing queries, managing schemas, and improving performance for robust data-driven applications.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🗃️</div>
+          <h3>SQL Server & Oracle</h3>
+          <p>
+            Proficient in handling complex queries, ensuring data integrity, and fine-tuning database configurations across multiple platforms.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🐍</div>
+          <h3>Python</h3>
+          <p>
+            Comfortable using Python for scripting, data analysis, and integrating ML libraries to uncover insights and create intelligent solutions.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🧠</div>
+          <h3>ML & AI Techniques</h3>
+          <p>
+            Familiar with core machine learning concepts, model training, and applying AI methods to extract value from complex datasets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>My Thesis</h2>
+      <p>
+        I am currently working on my undergraduate thesis titled <em>"Data Discovery and Data Exploration in Data Lakes"</em>. This research focuses on uncovering meaningful patterns within large-scale, heterogeneous data environments. By applying both semantic and syntactic analysis, along with AI-driven methods, my work aims to enhance data extraction processes and improve overall data quality. The insights gained through this project will contribute to more efficient data integration strategies and help organizations leverage their data lakes more effectively.
+      </p>
+    </section>
+
     <section class="proyectos">
       <h2>Projects</h2>
       <p>
-        Below is one of my personal projects. Feel free to explore the repository to learn more about the code and the technologies I used:
+        I enjoy exploring personal projects that blend programming, data analysis, and experimentation. Feel free to check out one of my repositories below:
       </p>
-      <!-- Replace 'your-username' and 'your-project-repo' with the actual GitHub repo link you mentioned -->
+      <!-- Replace 'your-username' and 'your-project-repo' with the actual GitHub repo link you want to showcase -->
       <a href="https://github.com/your-username/your-project-repo" target="_blank">View My Project</a>
     </section>
   </main>
